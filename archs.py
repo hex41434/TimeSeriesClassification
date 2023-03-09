@@ -94,6 +94,7 @@ class AutoEncoder(Module):
     return x
 
     ####################################################################
+
 class ShallowClassifier(Module):
     def __init__(self,c_in,c_out,n_neurons=100,fc_dropout=0):
         self.fc1 = nn.Linear(c_in, n_neurons, bias=True) 
@@ -121,6 +122,7 @@ class EncoderClassifier(Module):
         x = self.head(x)
         return x
 ############################################################################################
+
 class ConvNet(Module):
     
     def __init__(self,n_features,n_classes):
