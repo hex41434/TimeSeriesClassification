@@ -728,8 +728,8 @@ def plot_distribution_both(y_true,y_pred,network):
     ax2.set_xlabel('Timeline')
     ax2.legend()
 
-
     plt.show()
+    return fig
 #*************************************************
 
 def plot_fp_fn(y_true,y_pred,name):
