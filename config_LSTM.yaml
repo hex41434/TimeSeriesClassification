@@ -8,10 +8,10 @@ sample_segment:
   all_features:  False
 
 model:  
-  epochs:  5
+  epochs: 100
   bs:  32
   num_workers:  2
-  embed_size:  10
+
 
 optuna:
   epochs:  100

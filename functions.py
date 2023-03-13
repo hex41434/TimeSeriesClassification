@@ -656,7 +656,6 @@ def plot_confusion_both(y_true,y_pred,n_classes):
     ax1.xaxis.set_ticklabels(['No person','People']) ### names of classes starting from 0
     ax1.yaxis.set_ticklabels(['No person','People'])
 
-
     ### window
 
     group_counts = ["{0:0.0f}".format(value) for value in cf_matrix_window.flatten()]
@@ -676,11 +675,11 @@ def plot_confusion_both(y_true,y_pred,n_classes):
     ax2.xaxis.set_ticklabels(['Closed','Open']) ### names of classes starting from 0
     ax2.yaxis.set_ticklabels(['Closed','Open'])
 
-
-
 ## Display the visualization of the Confusion Matrix.
     plt.show()
+    return fig
 #******************************************
+
 def plot_distribution(y_true,y_pred,name):
     '''
     plot distribution of targets vs predictions in a given test set
