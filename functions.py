@@ -716,7 +716,7 @@ def plot_distribution_both(y_true,y_pred,network):
     if y_true is not None:
         ax1.plot(range(1,y_true.shape[0]+1),y_true[:,0],label='Targets')
     ax1.set_yticks([0,1],['No person','People'])
-    ax1.set_title(f'Distribution of predictions for {network}')
+    ax1.set_title(f'Distribution of predictions for {network} - class {class_name}')
     ax1.set_xlabel('Timeline')
     ax1.legend()
 
@@ -725,6 +725,7 @@ def plot_distribution_both(y_true,y_pred,network):
     if y_true is not None:
         ax2.plot(range(1,y_true.shape[0]+1),y_true[:,1],label='Targets')
     ax2.set_yticks([0,1],['Closed','Open'])
+    ax2.set_title(f'Distribution of predictions for {network} - class {class_name}')
     ax2.set_xlabel('Timeline')
     ax2.legend()
 

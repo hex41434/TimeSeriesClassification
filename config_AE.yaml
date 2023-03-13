@@ -8,11 +8,11 @@ sample_segment:
   all_features:  False
 
 model:  
-  epochs:  100
+  epochs:  50
   bs:  32
   num_workers:  2
   embed_size:  10
 
 optuna:
-  epochs:  30
-  trials:  10
+  epochs:  100
+  trials:  20
